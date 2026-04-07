@@ -1,0 +1,74 @@
+import { CalendarCheck, CreditCard } from 'lucide-react'
+
+export default function Hero() {
+  return (
+    <section className="relative min-h-screen bg-linear-to-br from-navy via-navy-light to-[#0d2e4d] flex items-center justify-center text-white text-center px-6 pt-24 overflow-hidden">
+      {/* Background decorative blobs */}
+      <div className="absolute top-20 left-10 w-64 h-64 bg-white/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-gold/10 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center gap-6">
+        {/* Badge */}
+        <span className="inline-block bg-gold/20 border border-gold/40 text-gold text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full">
+          Women's Empowerment Consultancy
+        </span>
+
+        {/* Headline */}
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          You Are{' '}
+          <span className="text-gold">Not Alone</span>
+        </h1>
+
+        {/* Subheading */}
+        <p className="text-lg md:text-xl text-white/80 max-w-xl leading-relaxed">
+          Empowering women to rise, thrive &amp; lead — through expert coaching, mentorship,
+          and a community that has your back.
+        </p>
+
+        {/* CTA Buttons */}
+        <div className="flex flex-wrap justify-center gap-4 mt-2">
+          <a
+            href="https://paystack.com/pay/your-link"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-hover text-black font-semibold text-base px-8 py-4 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
+          >
+            <CreditCard className="w-4 h-4" strokeWidth={2} />
+            Pay Now
+          </a>
+          <a
+            href="https://calendly.com/yourname/consultation"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center gap-2 border-2 border-white/70 text-white bg-white/5 hover:bg-white hover:text-navy hover:border-white font-semibold px-8 py-3 text-base rounded-lg shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 backdrop-blur-sm"
+          >
+            <CalendarCheck className="w-4 h-4" strokeWidth={2} />
+            Book a Session
+          </a>
+        </div>
+
+        {/* Stats row */}
+        <div className="flex flex-wrap justify-center gap-10 mt-8 pt-8 border-t border-white/10 w-full">
+          {[
+            { value: '500+', label: 'Women Supported' },
+            { value: '10+', label: 'Years Experience' },
+            { value: '98%', label: 'Client Satisfaction' },
+          ].map((stat) => (
+            <div key={stat.label} className="text-center">
+              <p className="text-3xl font-bold text-gold">{stat.value}</p>
+              <p className="text-sm text-white/60 mt-1">{stat.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-white/40 text-xs">
+        <span>Scroll</span>
+        <div className="w-0.5 h-8 bg-white/20 rounded-full relative overflow-hidden">
+          <div className="absolute top-0 w-full h-1/2 bg-gold animate-bounce" />
+        </div>
+      </div>
+    </section>
+  )
+}
