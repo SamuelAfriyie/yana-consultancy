@@ -43,20 +43,23 @@ export default function About() {
           </p>
         </div>
 
-        {/* Two-column layout: story + founder */}
+        {/* Two-column layout */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
           {/* Story */}
           <div className="space-y-5">
             <h3 className="text-2xl font-bold text-navy text-center md:text-left">Who We Are</h3>
             <p className="text-gray-600 leading-relaxed">
-              We are a women-led consultancy dedicated to helping women navigate life's toughest
-              transitions — from career pivots and business launches to personal reinvention and
-              leadership development.
+              I created YANA Consultancy because I understand what it feels like to face challenges
+              alone — trying to figure out life, career, and personal growth without the right support.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Whether you're an aspiring entrepreneur, a seasoned professional feeling stuck, or
-              someone ready to reclaim her voice — YANA is your partner from where you are to
-              where you're meant to be.
+              My mission is to help women move from confusion to clarity, from self-doubt to
+              confidence, and from feeling stuck to making real progress.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              Through guidance, support, and practical strategies, I work with women who are ready
+              to grow, take control of their lives, and achieve meaningful success.
+              <strong className="text-navy"> You don't have to do it alone anymore.</strong>
             </p>
             <div className="flex flex-wrap gap-3 pt-2">
               {['Career Coaching', 'Business Strategy', 'Life Coaching', 'Community'].map((tag) => (
@@ -72,27 +75,25 @@ export default function About() {
 
           {/* Founder card */}
           <div className="bg-linear-to-br from-navy to-navy-light text-white rounded-2xl p-8 shadow-xl">
-            {/* Avatar */}
             <div className="w-20 h-20 rounded-full overflow-hidden bg-gold/20 border-2 border-gold/50 mb-5 flex items-center justify-center shrink-0">
               <img
                 src="/founder.jpg"
-                alt="Founder"
+                alt="Patricia — Founder"
                 className="w-full h-full object-cover"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none'
-                  const parent = e.currentTarget.parentElement
-                  if (parent) {
-                    parent.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-gold/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg>`
-                  }
+                  const svg = document.createElement('div')
+                  svg.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="rgba(212,175,55,0.6)" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg>`
+                  e.currentTarget.parentElement?.appendChild(svg.firstChild as Node)
                 }}
               />
             </div>
-            <h4 className="text-xl font-bold mb-1">Founder &amp; Lead Coach</h4>
-            <p className="text-gold text-sm font-medium mb-4">YANA Consultancy</p>
+            <h4 className="text-xl font-bold mb-1">Patricia</h4>
+            <p className="text-gold text-sm font-medium mb-4">Founder &amp; Lead Coach, YANA Consultancy</p>
             <p className="text-white/75 leading-relaxed text-sm">
-              "I built YANA because I know what it feels like to stand at a crossroads with no map
-              and no one in your corner. My mission is to be that person for women everywhere —
-              the guide, the cheerleader, and the accountability partner all in one."
+              "I created YANA because I know what it feels like to carry everything alone — to feel
+              misunderstood and want more but not know how. Now, I help women move from confusion to
+              clarity. If that's you, I'm here."
             </p>
             <a
               href="https://calendly.com/yourname/consultation"
@@ -100,7 +101,7 @@ export default function About() {
               rel="noreferrer"
               className="inline-flex items-center justify-center mt-6 bg-gold hover:bg-gold-hover text-black font-semibold text-sm px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5"
             >
-              Book a Session
+              Book a Session with Patricia
             </a>
           </div>
         </div>

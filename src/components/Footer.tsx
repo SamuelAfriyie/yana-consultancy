@@ -13,7 +13,7 @@ const footerLinks = {
   ],
   Connect: [
     { label: 'Book a Session', href: 'https://calendly.com/yourname/consultation' },
-    { label: 'Pay for a Programme', href: 'https://paystack.com/pay/your-link' },
+    { label: 'Donate & Support', href: '#donate' },
     { label: 'WhatsApp Us', href: 'https://wa.me/233XXXXXXXXX' },
     { label: 'Email Us', href: 'mailto:info@yana-consultancy.com' },
   ],
