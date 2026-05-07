@@ -8,8 +8,8 @@ const services = [
     Icon: Briefcase,
     title: 'Career Coaching',
     description:
-      'Navigate career transitions, negotiate promotions, and build the professional brand that opens doors — with a coach who has walked the path.',
-    features: ['Resume & LinkedIn Audit', 'Interview Preparation', 'Salary Negotiation', 'Career Roadmap'],
+      'Gain clarity in your career path, make confident decisions, and position yourself for growth and opportunities.',
+    features: ['Career path clarity', 'Confident decision-making', 'Positioning for growth', 'Identifying opportunities'],
     badge: 'Most Popular',
     badgeClass: 'bg-gold/15 text-gold-hover border-gold/30',
   },
@@ -17,8 +17,8 @@ const services = [
     Icon: Rocket,
     title: 'Business Mentorship',
     description:
-      'From idea to launch and beyond — get strategic mentorship to build a sustainable, profitable business on your own terms.',
-    features: ['Business Model Design', 'Marketing Strategy', 'Financial Planning', 'Pitch Coaching'],
+      'Learn how to start, structure, and grow your business with practical guidance and strategic thinking.',
+    features: ['Business model design', 'Practical start-up guidance', 'Growth strategies', 'Strategic thinking'],
     badge: 'High Demand',
     badgeClass: 'bg-navy/10 text-navy border-navy/20',
   },
@@ -26,8 +26,8 @@ const services = [
     Icon: Leaf,
     title: 'Life Coaching',
     description:
-      "Reclaim your sense of self, set boundaries, and design a life aligned with your purpose and values — not everyone else's expectations.",
-    features: ['Mindset Transformation', 'Work-Life Balance', 'Confidence Building', 'Goal Setting'],
+      'Build confidence, emotional strength, and direction in your personal life so you can move forward with purpose.',
+    features: ['Confidence building', 'Emotional strength', 'Finding direction', 'Moving forward with purpose'],
     badge: 'Transformative',
     badgeClass: 'bg-emerald-50 text-emerald-700 border-emerald-200',
   },
@@ -35,8 +35,8 @@ const services = [
     Icon: Users,
     title: 'Community Support',
     description:
-      'Join a circle of driven, supportive women. Monthly masterclasses, peer accountability groups, and a private network that lifts as it climbs.',
-    features: ['Monthly Masterclasses', 'Peer Accountability', 'Private Network', 'Resource Library'],
+      'Join a circle of women who lift each other — peer accountability, shared resources, and a safe space to grow together.',
+    features: ['Peer accountability', 'Safe support circle', 'Shared resources', 'Collective growth'],
     badge: 'Community',
     badgeClass: 'bg-purple-50 text-purple-700 border-purple-200',
   },
@@ -54,7 +54,8 @@ export default function Services() {
           <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">Our Services</h2>
           <div className="w-16 h-1 bg-gold mx-auto rounded-full mb-6" />
           <p className="text-gray-500 max-w-xl mx-auto text-base md:text-lg leading-relaxed">
-            Tailored programmes designed to meet you where you are and carry you to where you need to be.
+            Three things every woman needs to grow: <strong>Clarity. Support. Strategy.</strong>{' '}
+            This is what we provide at YANA Consultancy.
           </p>
         </div>
 
@@ -66,7 +67,6 @@ export default function Services() {
               className="group border border-gray-100 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col overflow-hidden"
             >
               <CardHeader className="pb-3">
-                {/* Icon circle */}
                 <div className="w-11 h-11 rounded-xl bg-gold/10 border border-gold/20 flex items-center justify-center mb-3 group-hover:bg-gold/20 transition-colors">
                   <Icon className="w-5 h-5 text-gold" strokeWidth={1.5} />
                 </div>
@@ -96,9 +96,11 @@ export default function Services() {
 
         {/* CTA banner */}
         <div className="bg-linear-to-r from-navy to-navy-light rounded-2xl p-8 md:p-12 text-white text-center shadow-xl">
-          <h3 className="text-2xl md:text-3xl font-bold mb-3">Not sure which programme fits?</h3>
+          <h3 className="text-2xl md:text-3xl font-bold mb-3">
+            If you're serious about growth, let's work together.
+          </h3>
           <p className="text-white/70 mb-6 max-w-lg mx-auto">
-            Book a free 20-minute discovery call and let's figure out the perfect path together.
+            Book a free 20-minute discovery call and let's find the perfect path for you.
           </p>
           <a
             href="https://calendly.com/yourname/consultation"

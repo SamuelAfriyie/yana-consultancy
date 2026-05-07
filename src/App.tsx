@@ -5,6 +5,7 @@ import Services from '@/components/Services'
 import Testimonials from '@/components/Testimonials'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import Donate from '@/components/Donate'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import ScrollToTop from '@/components/ScrollToTop'
 
@@ -16,6 +17,7 @@ function App() {
         <Hero />
         <About />
         <Services />
+        <Donate />
         <Testimonials />
         <Contact />
       </main>

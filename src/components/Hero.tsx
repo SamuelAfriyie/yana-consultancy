@@ -1,4 +1,4 @@
-import { CalendarCheck, CreditCard } from 'lucide-react'
+import { CalendarCheck, Heart } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -7,35 +7,33 @@ export default function Hero() {
       <div className="absolute top-20 left-10 w-64 h-64 bg-white/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-gold/10 rounded-full blur-3xl pointer-events-none" />
 
-      {/* Main content — grows to fill space */}
+      {/* Main content */}
       <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center gap-6 flex-1 justify-center py-8">
         {/* Badge */}
         <span className="inline-block bg-gold/20 border border-gold/40 text-gold text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full">
-          Women's Empowerment Consultancy
+          Women's Empowerment &amp; Support
         </span>
 
         {/* Headline */}
         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-          You Are{' '}
-          <span className="text-gold">Not Alone</span>
+          Hi, I'm Patricia.{' '}
+          <span className="block text-gold mt-2">You Are Not Alone.</span>
         </h1>
 
         {/* Subheading */}
         <p className="text-lg md:text-xl text-white/80 max-w-xl leading-relaxed">
-          Empowering women to rise, thrive &amp; lead — through expert coaching, mentorship,
-          and a community that has your back.
+          I help women gain clarity, confidence, and direction in life, career, and business.
+          You don't have to figure it all out alone.
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-wrap justify-center gap-4 mt-2">
           <a
-            href="https://paystack.com/pay/your-link"
-            target="_blank"
-            rel="noreferrer"
+            href="#donate"
             className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-hover text-black font-semibold text-base px-8 py-4 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
           >
-            <CreditCard className="w-4 h-4" strokeWidth={2} />
-            Pay Now
+            <Heart className="w-4 h-4" strokeWidth={2} />
+            Support Our Mission
           </a>
           <a
             href="https://calendly.com/yourname/consultation"
@@ -63,7 +61,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator — in flow, never overlaps content */}
+      {/* Scroll indicator */}
       <div className="relative z-10 flex flex-col items-center gap-1 text-white/40 text-xs pb-2">
         <span>Scroll</span>
         <div className="w-0.5 h-8 bg-white/20 rounded-full relative overflow-hidden">
