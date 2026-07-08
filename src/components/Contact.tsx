@@ -5,9 +5,8 @@ import { buttonVariants } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { cn } from '@/lib/utils'
+import { CONTACT_EMAIL } from '@/lib/site'
 import { Mail, MessageCircle, MapPin, Clock } from 'lucide-react'
-
-const CONTACT_EMAIL = import.meta.env.VITE_CONTACT_EMAIL || 'pghann.yana@gmail.com'
 
 const contactInfo = [
   {

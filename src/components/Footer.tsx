@@ -1,3 +1,5 @@
+import { CONTACT_EMAIL } from '@/lib/site'
+
 const footerLinks = {
   Company: [
     { label: 'About Us', href: '#about' },
@@ -15,7 +17,7 @@ const footerLinks = {
     { label: 'Book a Session', href: 'https://calendly.com/yourname/consultation' },
     { label: 'Donate & Support', href: '#donate' },
     { label: 'WhatsApp Us', href: 'https://wa.me/233XXXXXXXXX' },
-    { label: 'Email Us', href: 'mailto:info@yana-consultancy.com' },
+    { label: 'Email Us', href: `mailto:${CONTACT_EMAIL}` },
   ],
 }
 
