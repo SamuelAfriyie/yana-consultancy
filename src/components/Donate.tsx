@@ -1,4 +1,5 @@
 import { Badge } from '@/components/ui/badge'
+import { CONTACT_EMAIL } from '@/lib/site'
 import { Heart, Sparkles, Star } from 'lucide-react'
 
 const tiers = [
@@ -179,7 +180,7 @@ export default function Donate() {
               Make a Custom Donation
             </a>
             <a
-              href="mailto:info@yana-consultancy.com"
+              href={`mailto:${CONTACT_EMAIL}`}
               className="inline-flex items-center gap-2 border border-navy/20 text-navy hover:bg-navy/5 font-semibold text-sm px-6 py-3 rounded-xl transition-all duration-200"
             >
               Contact Us About Giving
