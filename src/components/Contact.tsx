@@ -16,8 +16,8 @@ const contactInfo = [
   {
     Icon: MessageCircle,
     label: 'WhatsApp',
-    value: '+233 XX XXX XXXX',
-    href: 'https://wa.me/233XXXXXXXXX',
+    value: '+233 53 880 3918',
+    href: 'https://wa.me/233538803918',
   },
   {
     Icon: MapPin,
